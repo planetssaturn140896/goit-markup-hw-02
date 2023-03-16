@@ -14,6 +14,7 @@
     --background-team-color: #F4F4FD;
     --background-team-advantages-color: #FFFFFF;
     --portfolio-btm-color: #4D5AE5;
+    --portfolio-btms-color:#4D5AE5;;
     --mail-color: #404bbf;
 }
 
@@ -34,10 +35,9 @@ body {
 /* header  */
 .link {
     text-decoration: none;
-    font-style: normal;
 }
 .list {
-    font-style: normal
+    font-style: normal;
     list-style: none;
 }
 
@@ -72,19 +72,14 @@ body {
     letter-spacing: 0.02em;
     color: var(--second-link-color, #2E2F42);
 }
-.head-mail-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--second-adress-color, #434455) ;
-}
-.head-tel-link {
+.head-mail-link, .head-tel-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-adress-color, #434455);
 }
-.head-mail-link, .head-tel-lin:is(:hover, :focus) {
+ 
+.head-mail-link, .head-tel-link:is(:hover, :focus) {
     color: var(--mail-color, #404bbf);
 }
 
@@ -234,7 +229,7 @@ body {
 
 .portfolio-hero-list {}
 
-.filter-btn {
+.filter-btn-all {
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -246,7 +241,20 @@ body {
     color: var(--portfolio-btm-color,  #4D5AE5); 
     cursor: pointer;
 }
-.filter-btn:is(:hover, :focus) {
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--portfolio-btms-color, color: #4D5AE5);
+    background: #F4F4FD;
+    cursor: pointer;
+}
+.filter-btn-all:is(:hover, :focus) {
     color: #FFFFFF;
     background-color: var(--second-background-color, #404BBF) ;
 }
