@@ -29,6 +29,7 @@ body {
     color: var(--body-color, #434455);
     margin: 0;
     padding: 0;
+    background-color:#FFFFFF;
 }
 /* header  */
 .link {
@@ -36,6 +37,7 @@ body {
     font-style: normal;
 }
 .list {
+    font-style: normal
     list-style: none;
 }
 
@@ -80,10 +82,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--second-adress-color, #434455);
 }
-.head-mail-link:is(:hover, :focus) {
-    color: var(--mail-color, #404bbf) ;
-}
-.head-tel-link:is(:hover, :focus) {
+.head-mail-link, .head-tel-lin:is(:hover, :focus) {
     color: var(--mail-color, #404bbf);
 }
 
