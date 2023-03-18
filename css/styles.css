@@ -14,7 +14,8 @@
     --background-team-color: #F4F4FD;
     --background-team-advantages-color: #FFFFFF;
     --portfolio-btm-color: #4D5AE5;
-    --portfolio-btms-color:#4D5AE5;;
+    --portfolio-btms-color:#4D5AE5;
+    --portfolio-btms-background-color: #F4F4FD;
     --mail-color: #404bbf;
 }
 
@@ -72,14 +73,21 @@ body {
     letter-spacing: 0.02em;
     color: var(--second-link-color, #2E2F42);
 }
-.head-mail-link, .head-tel-link {
+.header-link:is(:hover, :focus) {
+    color: var(--mail-color, #404bbf);
+}
+
+.address-link {
+font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-adress-color, #434455);
 }
- 
-.head-mail-link, .head-tel-link:is(:hover, :focus) {
+
+.address-link:is(:hover, :focus) {
     color: var(--mail-color, #404bbf);
 }
 
@@ -229,18 +237,6 @@ body {
 
 .portfolio-hero-list {}
 
-.filter-btn-all {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--portfolio-btm-color,  #4D5AE5); 
-    cursor: pointer;
-}
 .filter-btn {
     font-family: inherit;
     font-weight: 500;
@@ -250,20 +246,16 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: var(--portfolio-btms-color, color: #4D5AE5);
-    background: #F4F4FD;
+    color: var(--portfolio-btm-color, #4D5AE5); 
+    background-color: var(--portfolio-btms-background-color, #F4F4FD);
     cursor: pointer;
 }
-.filter-btn-all:is(:hover, :focus) {
+.filter-btn:is(:hover, :focus) {
     color: #FFFFFF;
     background-color: var(--second-background-color, #404BBF) ;
 }
 /* About us 1 */
-.about-section {}
 
-.about-list {}
-
-.about-link {}
 
 .about-title {
     font-weight: 500;
