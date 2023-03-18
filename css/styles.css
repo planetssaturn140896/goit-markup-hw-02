@@ -67,6 +67,8 @@ body {
     color:var(--second-logo-color, #2E2F42);
 }
 .header-link {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -257,17 +259,20 @@ font-family: 'Roboto';
 /* About us 1 */
 
 
-.about-title {
+.grid-link {
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
+}
+
+.grid-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--second-title-color, #2E2F42);
-}
+    color: var(--second-title-color, #2E2F42);}
 
-.about-text {
+.grid-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--third-title-color, #434455);
-}
+    color: var(--third-title-color, #434455);}
