@@ -88,7 +88,9 @@ font-family: 'Roboto';
     letter-spacing: 0.02em;
     color: var(--second-adress-color, #434455);
 }
-
+.header-address {
+    font-style: normal;
+}
 .address-link:is(:hover, :focus) {
     color: var(--mail-color, #404bbf);
 }
@@ -259,19 +261,19 @@ font-family: 'Roboto';
 /* About us 1 */
 
 
-.grid-link {
+.portfolio-link {
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
 }
 
-.grid-title {
+.portfolio-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-title-color, #2E2F42);}
 
-.grid-text {
+.portfolio-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
